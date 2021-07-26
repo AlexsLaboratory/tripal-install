@@ -57,9 +57,6 @@ sudo sub_scripts/expect/tripal_install.exp
 echo -e "\e[32mGo to https://tripal.readthedocs.io/en/latest/user_guide/install_tripal/manual_install/install_tripal.html to setup Chado\e[0m"
 read -p "Once done press [ENTER] to continue"
 
-# Install GeoServer
-sub_scripts/geoserver_installer.sh $SCRIPTPATH
-
 # Purge
 sudo apt-get autoremove expect -y
 sudo apt-get autoremove -y
