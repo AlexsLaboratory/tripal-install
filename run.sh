@@ -14,7 +14,7 @@ sudo apt-get install expect -y
 
 # Set Permissions
 sudo chmod o+x $HOME
-sudo chmod -R o+x $HOME/install_script
+sudo chmod -R o+x $HOME/tripal-install
 
 # Ask postgres install info
 echo -e "\e[32mEnter Desired postgres credentials\e[0m"
@@ -48,7 +48,7 @@ read -p "Once done press [ENTER] to continue"
 
 # Remove Permissions
 sudo chmod o-x $HOME
-sudo chmod -R o-x $HOME/install_script
+sudo chmod -R o-x $HOME/tripal-install
 sudo chmod go-w /var/www/drupal/sites/default
 sudo chmod go-w /var/www/drupal/sites/default/settings.php
 
